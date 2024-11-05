@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Concerto de Celular</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="img/imagem 1/apple-touch-icon.png">
+</head>
+<body>
+   
+    <header>
+        <h1>Concerto de Celular Rápido</h1>
+    </header>
+
+    <main>
+        <section class="produto-detalhes">
+            <div class="container-imagem">
+                <div class="miniaturas">
+                    <img src="img/Nova pasta (8)/favicon_io (1)/apple-touch-icon.png" alt="Miniatura 1" onclick="trocarImagem('img/Nova pasta (7)/favicon_io/apple-touch-icon.png')">
+                    <img src="img/Nova pasta (9)/favicon_io/apple-touch-icon.png" alt="Miniatura 2" onclick="trocarImagem('img/Nova pasta (9)/favicon_io/apple-touch-icon.png')">
+                    <img src="img/Nova pasta (10)/favicon_io (1)/apple-touch-icon.png" alt="Miniatura 3" onclick="trocarImagem('img/Nova pasta (10)/favicon_io (1)/apple-touch-icon.png')">
+                </div>
+
+                <div class="imagem-principal">
+                    <img id="mainImage" src="img/Nova pasta (7)/favicon_io/apple-touch-icon.png" alt="Imagem do Serviço">
+                </div>
+            </div>
+
+            <div class="detalhes-produto">
+                <h2>Troca de Tela de Celular</h2>
+                <p class="descricao">Substituímos sua tela quebrada em até 30 minutos. Garantia de 6 meses.</p>
+                <p class="preco">R$ 200,00</p>
+
+                <div class="selecao-opcoes">
+                    <label for="tamanho">Tamanho:</label>
+                    <select id="tamanho">
+                        <option value="p">Pequeno</option>
+                        <option value="m">Médio</option>
+                        <option value="g">Grande</option>
+                    </select>
+
+                    <label for="cor">Cor:</label>
+                    <select id="cor">
+                        <option value="preto">Preto</option>
+                        <option value="branco">Branco</option>
+                        <option value="azul">Cinza</option>
+                    </select>
+                </div>
+
+                <button class="botao-comprar">Orçamento</button>
+                <a href="carrinho.html" class="botao-comprar">Carrinho</a>
+            </div>
+        </section>
+
+        <section class="comentarios">
+            <h3>Comentários de Clientes</h3>
+
+            <div class="comentario">
+                <img src="img/Nova pasta (11)/favicon_io/apple-touch-icon.png" alt="Foto do Usuário">
+                <p>"Essa foi goat, trabalho excelente dog" - Yuri22</p>
+            </div>
+
+            <div class="comentario">
+                <img src="img/Nova pasta (12)/favicon_io (1)/apple-touch-icon.png" alt="Foto do Usuário">
+                <p>"Ótimo atendimento e preço justo. Recomendo!" - Jojo Todynho</p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Loja de assistência técnica. Todos os direitos reservados.</p>
+    </footer>
+
+    <script>
+        function trocarImagem(novaImagem) {
+            document.getElementById('mainImage').src = novaImagem;
+        }
+    </script>
+     <footer>
+        <div class="footer-content">
+            <p>&copy; 2024 Loja de Assistência Técnica. Todos os direitos reservados.</p>
+            <p><a href="#">Política de Privacidade</a> | <a href="#">Termos de Serviço</a></p>
+            <p>Endereço: Rua Perdina, 123 Hortolandia SP </p>
+            <p>Telefone: (11) 1234-5678</p>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
+
+
